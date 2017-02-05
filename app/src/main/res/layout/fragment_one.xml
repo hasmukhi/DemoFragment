@@ -1,16 +1,25 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="task3.hasmukhi.admin.task3.FragmentOne"
-    android:background="@android:color/holo_red_dark">
+    android:weightSum="1">
 
     <!-- TODO: Update blank fragment layout -->
-    <Button
-        android:layout_width="match_parent"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="363dp"
         android:layout_height="wrap_content"
-        android:text="Go To c"
-        android:id="@+id/btn_goto_c"/>
+        android:orientation="horizontal"
+        tools:context="task3.hasmukhi.admin.task3.FragmentOne"
+        android:weightSum="1">
 
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="Go To b"
+            android:id="@+id/btn_goto_b"
+            android:layout_weight="0.83" />
+    </LinearLayout>
 </LinearLayout>

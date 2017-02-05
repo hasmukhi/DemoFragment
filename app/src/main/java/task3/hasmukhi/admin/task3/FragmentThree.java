@@ -14,12 +14,11 @@ import android.widget.Button;
 /**
  * A simple {@link Fragment} subclass.
  */
+public class FragmentThree extends Fragment {
 
-public class FragmentTwo extends Fragment {
 
-    private Button btna;
     private Button btnc;
-    public FragmentTwo() {
+    public FragmentThree() {
         // Required empty public constructor
     }
 
@@ -28,30 +27,17 @@ public class FragmentTwo extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view= inflater.inflate(R.layout.fragment_two, container, false);
-        btna=(Button)view.findViewById(R.id.btn_goto_a);
-        btnc =(Button)view.findViewById(R.id.btn_goto_c);
-        btna.setOnClickListener(new View.OnClickListener() {
+        View view= inflater.inflate(R.layout.fragment_fragment_three, container, false);
+        btnc=(Button) view.findViewById(R.id.btn_goto_back);
+        btnc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentOne fragmentOne=new FragmentOne();
                 FragmentManager fm =getFragmentManager();
                 FragmentTransaction ft=fm.beginTransaction();
                 //ft.replace(R.id.ll_layout,fragmentOne);
-                        //ft.addToBackStack("");
-                fm.popBackStack();
-                ft.commit();
-
-            }
-        });
-        btnc.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FragmentThree fragmentThree=new FragmentThree();
-                FragmentManager fm =getFragmentManager();
-                FragmentTransaction ft=fm.beginTransaction();
-                ft.replace(R.id.ll_layout,fragmentThree);
                 ft.addToBackStack("");
+                fm.popBackStack();
                 ft.commit();
             }
         });

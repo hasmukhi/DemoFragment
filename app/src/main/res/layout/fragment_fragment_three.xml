@@ -3,12 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="task3.hasmukhi.admin.task3.FragmentTwo"
-    >
-
+    tools:context="task3.hasmukhi.admin.task3.FragmentThree">
 
     <!-- TODO: Update blank fragment layout -->
-
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
@@ -20,19 +17,11 @@
         <Button
             android:layout_width="170dp"
             android:layout_height="wrap_content"
-            android:text="Go To a"
+            android:text="Back"
             android:layout_gravity="bottom"
-            android:id="@+id/btn_goto_a"
-            android:layout_weight="0.28" />
+            android:id="@+id/btn_goto_back" />
 
-        <Button
-        android:layout_width="156dp"
-        android:layout_height="wrap_content"
-        android:text="Go To c"
-        android:layout_gravity="bottom"
-        android:id="@+id/btn_goto_c"
-            android:layout_weight="0.17" />
+
     </LinearLayout>
 
 </LinearLayout>
-

@@ -12,11 +12,7 @@
     tools:context="task3.hasmukhi.admin.task3.MainActivity"
     android:weightSum="1">
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Go To b"
-        android:id="@+id/btn_goto_b" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="489dp"
